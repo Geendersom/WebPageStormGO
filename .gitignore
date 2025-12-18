@@ -1,25 +1,73 @@
-# Dados sensíveis
+# ============================================
+# DADOS SENSÍVEIS E CONFIGURAÇÕES
+# ============================================
+
+# Dados de usuários e contatos
 data/
 *.log
+*.json
+!package.json
+!package-lock.json
 
-# Configurações locais
+# Arquivos de configuração com credenciais
+php/config.php
 php/config.local.php
+*.env
+.env.local
+.env.*.local
 
-# Sistema
+# ============================================
+# SCRIPTS LOCAIS (não necessários no repositório público)
+# ============================================
+
+# Scripts de servidor local
+start-server.sh
+Iniciar Servidor.command
+*.command
+
+# ============================================
+# SISTEMA E IDEs
+# ============================================
+
+# Arquivos do sistema
 .DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
 Thumbs.db
+*.swp
+*.swo
+*~
 
 # IDEs
 .vscode/
 .idea/
-*.swp
-*.swo
+*.sublime-project
+*.sublime-workspace
+
+# ============================================
+# DEPENDÊNCIAS E BUILD
+# ============================================
 
 # Node modules (se usar build tools)
 node_modules/
 package-lock.json
+yarn.lock
 
-# Build
+# Build e dist
 dist/
 build/
+*.min.js
+*.min.css
+
+# ============================================
+# TEMPORÁRIOS
+# ============================================
+
+# Arquivos temporários
+*.tmp
+*.temp
+.cache/
 

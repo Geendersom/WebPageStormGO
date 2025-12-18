@@ -79,10 +79,17 @@ WebPageStormGO/
 
 ### Configuração PHP
 
-1. Edite `php/config.php` com suas configurações:
+1. **Configure o arquivo de configuração:**
+   ```bash
+   cd php
+   cp config.example.php config.php
+   ```
+   Edite `php/config.php` com suas configurações reais:
    - Email SMTP
    - Credenciais de banco de dados (se necessário)
    - Domínios permitidos
+   
+   ⚠️ **Importante:** O arquivo `config.php` contém credenciais sensíveis e não deve ser commitado no repositório.
 
 2. Crie a pasta `data/` para armazenar contatos:
    ```bash
