@@ -1,0 +1,25 @@
+# Dados sensíveis
+data/
+*.log
+
+# Configurações locais
+php/config.local.php
+
+# Sistema
+.DS_Store
+Thumbs.db
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Node modules (se usar build tools)
+node_modules/
+package-lock.json
+
+# Build
+dist/
+build/
+

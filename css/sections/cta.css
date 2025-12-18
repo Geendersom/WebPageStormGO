@@ -1,0 +1,142 @@
+.cta {
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-dark) 100%);
+    padding: 5rem 0;
+    color: white;
+}
+
+.cta-container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+.cta-content {
+    animation: fadeIn 0.8s ease-out;
+}
+
+.cta-title {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: white;
+}
+
+.cta-description {
+    font-size: 1.125rem;
+    color: rgba(255, 255, 255, 0.9);
+    margin-bottom: 2rem;
+    line-height: 1.7;
+}
+
+.cta-buttons {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.cta-buttons .btn-primary {
+    background: white;
+    color: var(--primary-color);
+}
+
+.cta-buttons .btn-primary:hover {
+    background: rgba(255, 255, 255, 0.95);
+    transform: translateY(-2px);
+}
+
+.cta-buttons .btn-secondary {
+    border-color: white;
+    color: white;
+}
+
+.cta-buttons .btn-secondary:hover {
+    background: white;
+    color: var(--primary-color);
+}
+
+.cta-form-container {
+    background: white;
+    padding: 2.5rem;
+    border-radius: var(--radius-xl);
+    box-shadow: var(--shadow-xl);
+    animation: slideIn 0.8s ease-out 0.2s both;
+}
+
+.form-title {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    color: var(--text-primary);
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    font-size: 0.875rem;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 2px solid var(--border-color);
+    border-radius: var(--radius-md);
+    font-size: 1rem;
+    font-family: inherit;
+    transition: border-color 0.3s ease;
+    color: var(--text-primary);
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: var(--primary-color);
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+@media (max-width: 968px) {
+    .cta-container {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+    
+    .cta-title {
+        font-size: 2rem;
+    }
+    
+    .cta-buttons {
+        flex-direction: column;
+    }
+    
+    .cta-buttons button {
+        width: 100%;
+    }
+}
+
+@media (max-width: 640px) {
+    .cta {
+        padding: 3rem 0;
+    }
+    
+    .cta-form-container {
+        padding: 2rem;
+    }
+    
+    .cta-title {
+        font-size: 1.75rem;
+    }
+}
+
